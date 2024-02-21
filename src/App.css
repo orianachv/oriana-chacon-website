@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: rgb(17 24 39); /* Reemplaza #tuColorDeFondo con el color deseado */
+}
+
+
