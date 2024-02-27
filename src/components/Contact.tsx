@@ -53,49 +53,52 @@ const Contact: React.FC = () => {
     };
 
     return (
-        <div id="contact" className="bg-gray-900 text-gray-100">
-            <h2 className="text-4xl font-bold mb-6 text-start">Contact</h2>
-            <form onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto text-center">
-                <div>
-                    <label htmlFor="name" className="block text-md font-medium">Nombre</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        className="text-gray-900 w-full border border-gray-300 rounded-lg px-3 py-2 mt-1 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-md"
-                        required
-                    />
-                </div>
-                <div>
-                    <label htmlFor="email" className="block text-md font-medium">Correo Electrónico</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="text-gray-900 w-full border border-gray-300 rounded-lg px-3 py-2 mt-1 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-md"
-                        required
-                    />
-                </div>
-                <div>
-                    <label htmlFor="message" className="block text-md font-medium">Mensaje</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        className="text-gray-900 w-full border border-gray-300 rounded-lg px-3 py-2 mt-1 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-md"
-                        required
-                    />
-                </div>
-                <button type="submit" className="w-full bg-teal-500 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
-                    Enviar
-                </button>
-            </form>
+        <div id="contact" className="text-gray-200 p-6 ">
+            <h2 className="text-3xl font-bold mb-6">Contact</h2>
+            <div className='flex flex-col items-center'>
+                <form onSubmit={handleSubmit} className="space-y-8 w-full max-w-lg mx-auto">
+                    <div>
+                        <label htmlFor="name" className="block text-md font-medium ">Nombre</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleChange}
+                            className="text-gray-900 w-full border border-transparent rounded-lg px-4 py-2 mt-1 focus:outline-none focus:ring-4 focus:ring-teal-500 focus:border-transparent bg-white shadow-sm"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="email" className="block text-md font-medium ">Correo Electrónico</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            className="text-gray-900 w-full border border-transparent rounded-lg px-4 py-2 mt-1 focus:outline-none focus:ring-4 focus:ring-teal-500 focus:border-transparent bg-white shadow-sm"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="message" className="block text-md font-medium ">Mensaje</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            value={formData.message}
+                            onChange={handleChange}
+                            className="text-gray-900 w-full border border-transparent rounded-lg px-4 py-2 mt-1 focus:outline-none focus:ring-4 focus:ring-teal-500 focus:border-transparent bg-white shadow-sm"
+                            required
+                        />
+                    </div>
+                    <button type="submit" className="w-full bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                        Enviar
+                    </button>
+                </form>
+            </div>
         </div>
+
     );
 };
 
