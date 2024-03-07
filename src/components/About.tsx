@@ -2,7 +2,7 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="bg-gray-900 text-gray-100 p-6 rounded-lg shadow-lg">
+    <section id="about" className="bg-gray-900 text-gray-100 p-6">
       <h2 className="text-3xl font-bold mb-4">About Me</h2>
       <p className="mb-8 text-md leading-relaxed">
         Hello! My name is Oriana, and I'm a dedicated web developer with over 5 years of experience in the tech industry.

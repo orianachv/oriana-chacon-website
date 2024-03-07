@@ -1,6 +1,6 @@
 const Skills: React.FC = () => {
   const skills = [
-      "HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Node.js", "Chakra UI", "Material UI", "Next.js", "SQL", "AWS", "Cypress"
+      "HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Node.js", "Chakra UI", "Material UI", "Next.js", "SQL", "AWS", "Cypress", "Redux", "Recoil", "Zustand", "GIT", "Google Cloud Platform"
   ];
 
   return (
