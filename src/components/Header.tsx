@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import github from '../icons/github.png'
-import linkedin from '../icons/linkedin.png'
-import gmail from '../icons/gmail-dos.png'
-import close from '../icons/close.png'
-import menu from '../icons/menu.png'
-
+import github from '../icons/github.png';
+import linkedin from '../icons/linkedin.png';
+import gmail from '../icons/gmail-dos.png';
+import close from '../icons/close.png';
+import menu from '../icons/menu.png';
 
 const SOCIAL_LINKS = {
   linkedin: 'https://www.linkedin.com/in/oriana-chacon-vivas-0823b7100/',
@@ -12,60 +11,50 @@ const SOCIAL_LINKS = {
   gmail: 'mailto:chacon.oriana.19@gmail.com'
 };
 
-const HeaderLinks: React.FC<{ cvUrl: string; onLinkClick: () => void }> = ({ cvUrl, onLinkClick }) => (
-  <div className="flex flex-col items-center space-y-2 md:space-y-0 md:space-x-4">
-    <a href="#about" onClick={onLinkClick} className="text-white hover:text-gray-200 transition duration-150 ease-in-out">About</a>
-    <a href="#experience" onClick={onLinkClick} className="text-white hover:text-gray-200 transition duration-150 ease-in-out">Experience</a>
-    <a href="#skills" onClick={onLinkClick} className="text-white hover:text-gray-200 transition duration-150 ease-in-out">Skills</a>
-    <a href="#contact" onClick={onLinkClick} className="text-white hover:text-gray-200 transition duration-150 ease-in-out">Contact</a>
-    <a href={cvUrl} download="Oriana_Chacon_Resume.pdf" onClick={onLinkClick} className="text-white hover:text-gray-200 transition duration-150 ease-in-out">Resume</a>
-  </div>
+const HeaderLinks: React.FC<{ cvUrl: string; onLinkClick: (section: string) => void; currentSection: string }> = ({ cvUrl, onLinkClick, currentSection }) => (
+  <nav className="flex flex-col items-start space-y-2">
+    <a href="#about" onClick={() => onLinkClick('about')} className={`text-white transition duration-150 ease-in-out ${currentSection === 'about' ? 'font-bold' : 'hover:text-gray-200'}`}>About</a>
+    <a href="#experience" onClick={() => onLinkClick('experience')} className={`text-white transition duration-150 ease-in-out ${currentSection === 'experience' ? 'font-bold' : 'hover:text-gray-200'}`}>Experience</a>
+    <a href="#skills" onClick={() => onLinkClick('skills')} className={`text-white transition duration-150 ease-in-out ${currentSection === 'skills' ? 'font-bold' : 'hover:text-gray-200'}`}>Skills</a>
+    <a href="#contact" onClick={() => onLinkClick('contact')} className={`text-white transition duration-150 ease-in-out ${currentSection === 'contact' ? 'font-bold' : 'hover:text-gray-200'}`}>Contact</a>
+    <a href={cvUrl} download="Oriana_Chacon_Resume.pdf" onClick={() => onLinkClick('resume')} className={`text-white transition duration-150 ease-in-out ${currentSection === 'resume' ? 'font-bold' : 'hover:text-gray-200'}`}>Resume</a>
+  </nav>
 );
 
 const SocialLinks: React.FC = () => (
-  <div className='flex flex-row gap-3 justify-center mt-8'>
-    <a href={SOCIAL_LINKS.linkedin}>
-      <img alt='social-media' src={linkedin} className='w-6 h-6' />
-
-    </a>
-    <a href={SOCIAL_LINKS.github}>
-      <img alt='social-media' src={github} className='w-6 h-6' />
-
-    </a>
-    <a href={SOCIAL_LINKS.gmail}>
-      <img alt='social-media' src={gmail} className='w-6 h-6' />
-    </a>
+  <div className="flex justify-center space-x-4 mt-4">
+    <a href={SOCIAL_LINKS.linkedin}><img alt="LinkedIn" src={linkedin} className="w-6 h-6" /></a>
+    <a href={SOCIAL_LINKS.github}><img alt="GitHub" src={github} className="w-6 h-6" /></a>
+    <a href={SOCIAL_LINKS.gmail}><img alt="Gmail" src={gmail} className="w-6 h-6" /></a>
   </div>
-)
-
+);
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [currentSection, setCurrentSection] = useState('about');
   const cvUrl = 'https://github.com/orianachv/resume/raw/main/CV%20ENGLISH%20ORIANA%20CHACO%CC%81N%20%20(1).pdf';
 
-  const handleLinkClick = () => setIsMenuOpen(false);
+  const handleLinkClick = (section: string) => {
+    setCurrentSection(section);
+    setIsMenuOpen(false);
+  };
 
   return (
-    <header className="py-4 flex flex-col md:flex-row">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex md:flex-col justify-between w-full">
-        <h1 className="text-white text-2xl font-bold md:text-3xl md:mb-8">Oriana Chacon Vivas</h1>
+    <header className="bg-gray-800 text-white p-4 md:flex md:flex-col">
+      <div className="flex items-center justify-between">
+        <h1 className="text-2xl font-bold">Oriana Chacon Vivas</h1>
         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden focus:outline-none">
           <img src={isMenuOpen ? close : menu} alt="Menu" className="w-6 h-6" />
         </button>
-
-        <div className="hidden md:block ">
-          <HeaderLinks cvUrl={cvUrl} onLinkClick={() => { }} />
-
-          <SocialLinks />
-        </div>
       </div>
-      {isMenuOpen && (
-        <div className="md:hidden px-8 py-4">
-          <HeaderLinks cvUrl={cvUrl} onLinkClick={handleLinkClick} />
-          <SocialLinks />
+      <div className={`md:flex md:flex-col gap-12 ${isMenuOpen ? 'block' : 'hidden'}`}>
+        <div className="p-4 md:pb-0">
+          <HeaderLinks cvUrl={cvUrl} onLinkClick={handleLinkClick} currentSection={currentSection} />
         </div>
-      )}
+        <SocialLinks />
+      </div>
     </header>
   );
 };
+
 
 export default Header;
