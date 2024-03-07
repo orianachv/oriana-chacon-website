@@ -23,9 +23,9 @@ const HeaderLinks: React.FC<{ cvUrl: string; onLinkClick: (section: string) => v
 
 const SocialLinks: React.FC = () => (
   <div className="flex justify-center space-x-4 mt-4">
-    <a href={SOCIAL_LINKS.linkedin}><img alt="LinkedIn" src={linkedin} className="w-6 h-6" /></a>
-    <a href={SOCIAL_LINKS.github}><img alt="GitHub" src={github} className="w-6 h-6" /></a>
-    <a href={SOCIAL_LINKS.gmail}><img alt="Gmail" src={gmail} className="w-6 h-6" /></a>
+    <a href={SOCIAL_LINKS.linkedin}><img alt="LinkedIn" src={linkedin} className="w-8 h-8" /></a>
+    <a href={SOCIAL_LINKS.github}><img alt="GitHub" src={github} className="w-8 h-8" /></a>
+    <a href={SOCIAL_LINKS.gmail}><img alt="Gmail" src={gmail} className="w-8 h-8" /></a>
   </div>
 );
 const Header: React.FC = () => {
@@ -41,16 +41,19 @@ const Header: React.FC = () => {
   return (
     <header className="bg-gray-800 text-white p-4 md:flex md:flex-col">
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold">Oriana Chacon Vivas</h1>
+          <h1 className="text-2xl font-bold"> Oriana Chacon Vivas</h1>
+
         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden focus:outline-none">
           <img src={isMenuOpen ? close : menu} alt="Menu" className="w-6 h-6" />
         </button>
       </div>
-      <div className={`md:flex md:flex-col gap-12 ${isMenuOpen ? 'block' : 'hidden'}`}>
-        <div className="p-4 md:pb-0">
+      <div className={`md:flex md:flex-col gap-14 ${isMenuOpen ? 'block' : 'hidden'}`}>
+        <div className="p-4 md:pb-0 ">
           <HeaderLinks cvUrl={cvUrl} onLinkClick={handleLinkClick} currentSection={currentSection} />
         </div>
+
         <SocialLinks />
+
       </div>
     </header>
   );
