@@ -1,0 +1,29 @@
+{
+  "home": {
+    "name": "Oriana Chacón",
+    "developer": "Desarrollador Front End"
+  },
+  "about": {
+    "title": "Acerca de Mi",
+    "description_one": "¡Hola! Soy Oriana, una apasionada desarrolladora web con una trayectoria de más de 5 años en el sector tecnológico. Mi experiencia se centra en el desarrollo front-end, donde he destacado por crear interfaces responsivas que aseguran una experiencia de usuario fluida y adaptable a cualquier dispositivo. La tecnología es más que mi profesión, es mi pasión. Me dedico a explorar y dominar nuevas técnicas y herramientas que empujan las fronteras del desarrollo web hacia nuevas dimensiones. Además, me encanta compartir conocimientos, ideas y descubrimientos con la comunidad, creyendo firmemente en el valor de la colaboración y el aprendizaje colectivo.",
+    "description_two": "Continuamente busco innovar y enfrentar nuevos desafíos. Mi trayectoria me ha enseñado la importancia de ser adaptable y el valor de abrazar el cambio en un paisaje digital que evoluciona rápidamente. Mirando hacia el futuro, mi objetivo es contribuir a proyectos que no solo aprovechen las tecnologías más avanzadas, sino que también tengan un impacto significativo en la vida de las personas.",
+    "description_three": "Acompáñame en este emocionante camino y disfrutemos juntos!"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "cliengo": {
+        "title": "Desarrollador React - Cliengo Argentina",
+        "year": "2022 - 2023",
+        "description_one": "Desarrollé interacciones innovadoras para chatbots como miembro clave del equipo de experiencia de conversación, utilizando React.",
+        "description_two": "Mejoré la consistencia del proyecto y reduje el tiempo de desarrollo mediante el diseño de componentes de UI reutilizables, lo que mejoró la mantenibilidad y la escalabilidad de la aplicación.",
+        "description_three":"Contribuí al exitoso despliegue de la aplicación en Amazon Web Services, potenciando la escalabilidad y la fiabilidad del sistema."
+    },
+    "endava": {
+        "title": "Desarrollador Front End - Cliente: Adobe, Endava Argentina",
+        "year": "2021 - 2022",
+        "description_one": "Construí con éxito interfaces de usuario basadas en datos, alineadas con los diseños del equipo de Adobe XD, logrando una traducción impecable del concepto a la funcionalidad.",
+        "description_two": "Desarrollé y mantuve sitios web orientados al usuario utilizando HTML, CSS, JavaScript y React, manteniendo las mejores prácticas y los estándares web modernos.",
+        "description_three":"Innové en la creación de componentes de UI caracterizados por código reutilizable, mejorando significativamente la experiencia del usuario mediante un enfoque en la modularidad, escalabilidad y mantenibilidad."
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "home": {
+    "name": "I'm Oriana Chacón",
+    "developer": "Front End Developer"
+  },
+  "about": {
+    "title": "About me",
+    "description_one":  "Hello! I'm Oriana, a passionate web developer with over 5 years of experience in the tech industry. My expertise lies in front-end development, where I've excelled in creating responsive designs that ensure a seamless user experience across all devices. Technology is more than my profession; it's my passion. I dedicate myself to exploring and mastering new techniques and tools that push the boundaries of web development to new heights. Additionally, I love to share my knowledge, ideas, and discoveries with others, firmly believing in the value of collaboration and collective learning.",
+    "description_two": "I continually seek to innovate and tackle new challenges. My journey has taught me the importance of adaptability and the value of embracing change in a fast-evolving digital landscape. As I look to the future, my goal is to contribute to projects that not only leverage cutting-edge technologies but also make a meaningful impact on people's lives. Join me on this exciting journey and enjoy.",
+    "description_three": "Join me on this exciting journey and enjoy!"
+  },
+  "experience": {
+    "title": "Experience",
+    "cliengo": {
+        "title": "React Developer - Cliengo Argentina",
+        "year": "2022 - 2023",
+        "description_one": "Developed innovative chatbot interactions as a key member of the conversation experience team using React.",
+        "description_two": "Enhanced project consistency and reduced development time by designing reusable UI components, improving application maintainability and scalability.",
+        "description_three":"Contributed to successful app deployment on Amazon Web Services, boosting system scalability and reliability."
+    },
+    "endava": {
+        "title": "Front End Developer - Client: Adobe, Endava Argentina",
+        "year": "2021 - 2022",
+        "description_one": "Successfully built data-driven UIs in alignment with design team inputs and XD designs, achieving seamless concept-to-functionality translation.",
+        "description_two": "Developed and maintained user-facing websites using HTML, CSS, JavaScript, and React, upholding best practices and modern web standards.",
+        "description_three":"Innovated in the creation of UI components characterized by reusable code, thereby significantly enhancing user experience through an emphasis on modularity, scalability, and maintainability."
+    }
+  }
+}

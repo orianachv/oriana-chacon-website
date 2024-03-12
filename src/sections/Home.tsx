@@ -2,6 +2,7 @@ import React from 'react';
 import github from '../icons/github.png';
 import linkedin from '../icons/linkedin.png';
 import gmail from '../icons/gmail-dos.png';
+import { useTranslation } from 'react-i18next';
 
 const SOCIAL_LINKS = {
     linkedin: 'https://www.linkedin.com/in/oriana-chacon-vivas-0823b7100/',
@@ -16,14 +17,16 @@ const SocialLinks: React.FC = () => (
     </div>
   );
 
-const Name: React.FC = () => {
+const Home: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="bg-gray-900 text-gray-100 p-6 flex flex-col items-center h-[600px] justify-center">
-      <h1 className="text-4xl font-bold mb-4 text-teal-400">I'm Oriana Chacon</h1>
-      <h2 className="text-xl font-bold mb-4">Front End Developer</h2>
+      <h1 className="text-4xl font-bold mb-4 text-teal-400">{t('home.name')}</h1>
+      <h2 className="text-xl font-bold mb-4">{t('home.developer')}</h2>
       <SocialLinks/>
     </section>
   );
 };
 
-export default Name;
+export default Home;

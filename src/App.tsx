@@ -1,9 +1,9 @@
 import './App.css';
-import About from './components/About';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
-import Experience from './components/Experience';
-import Name from './components/Name';
+import About from './sections/About';
+import Skills from './sections/Skills';
+import Contact from './sections/Contact';
+import Experience from './sections/Experience';
+import Home from './sections/Home';
 import Header from './components/Header';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Header />
 
       <div className="flex flex-col md:px-16 py-4">
-        <Name />
+        <Home />
         <About />
         <Experience />
         <Skills />

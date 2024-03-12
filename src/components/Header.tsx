@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import close from '../icons/close.png';
 import menu from '../icons/menu.png';
+import SwitchButton from './SwitchButton';
 
 
 const Header: React.FC = () => {
@@ -8,7 +9,7 @@ const Header: React.FC = () => {
     const [language, setLanguage] = useState('english'); // Establece el idioma inicial, por ejemplo, 'english'
 
     const toggleLanguage = () => {
-        const newLanguage = language === 'english' ? 'spanish' : 'english';
+        const newLanguage = language === 'EN' ? 'ES' : 'EN';
         setLanguage(newLanguage);
         // Aquí puedes agregar lógica para cambiar el idioma de tu aplicación
     };
@@ -24,11 +25,9 @@ const Header: React.FC = () => {
             <nav className={`md:flex flex-col md:flex-row ${isMenuOpen ? 'block' : 'hidden'}`}>
                 <a href="#about" className="block px-4 py-2  hover:text-teal-400 hover:bg-gray-700 hover:rounded-md  ">ABOUT</a>
                 <a href="#experience" className="block px-4 py-2  hover:text-teal-400 hover:bg-gray-700 hover:rounded-md">EXPERIENCE</a>
-                <a href="#skills" className="block px-4 py-2  hover:text-teal-400 hover:bg-gray-700 hover:rounded-md">SKILSS</a>
+                <a href="#skills" className="block px-4 py-2  hover:text-teal-400 hover:bg-gray-700 hover:rounded-md">SKILLS</a>
                 <a href="#contact" className="block px-4 py-2  hover:text-teal-400 hover:bg-gray-700 hover:rounded-md">CONTACT</a>
-                <button onClick={toggleLanguage} className="block px-4 py-2  hover:text-teal-400 hover:bg-gray-700 hover:rounded-md">
-                    {language === 'english' ? 'Español' : 'English'} {/* Texto del botón para cambiar el idioma */}
-                </button>
+               <SwitchButton/>
             </nav>
 
         </header>

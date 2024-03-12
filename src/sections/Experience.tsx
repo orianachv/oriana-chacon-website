@@ -1,33 +1,33 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Experience: React.FC = () => {
+    const { t } = useTranslation();
     return (
         <section id="experience" className="bg-gray-900 text-gray-200">
             <div className="container mx-auto p-5">
-                <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-start">Experience</h2>
+                <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-start">{t('experience.title')}</h2>
                 <div className="space-y-8">
 
                     {/* React Developer Experience */}
                     <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-                        <h3 className="text-xl font-semibold text-teal-400">React Developer - Cliengo Argentina</h3>
-                        <p className="text-sm text-gray-400">2022 - 2023</p>
+                        <h3 className="text-xl font-semibold text-teal-400">{t('experience.cliengo.title')}</h3>
+                        <p className="text-sm text-gray-400">{t('experience.cliengo.year')}</p>
                         <ul className="list-disc list-inside space-y-2 mt-4 text-gray-300">
-                            <li>Worked in the conversation experience team developing React applications for chatbot conversations.</li>
-                            <li>Built reusable UI components for multiple projects.</li>
-                            <li>Deployed React applications on AWS cloud platform.</li>
-                            <li>Maintained high coding standards with TypeScript and ESLint.</li>
-                            <li>Managed projects using Agile methodology, including Scrum.</li>
+                            <li>{t('experience.cliengo.description_one')}</li>
+                            <li>{t('experience.cliengo.description_two')}</li>
+                            <li>{t('experience.cliengo.description_three')}</li>
                         </ul>
                     </div>
 
                     {/* Front End Developer Experience */}
                     <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-                        <h3 className="text-xl font-semibold text-teal-400">Front End Developer - Client: Adobe, Endava Argentina</h3>
-                        <p className="text-sm text-gray-400">2021 - 2022</p>
+                        <h3 className="text-xl font-semibold text-teal-400">{t('experience.endava.title')}</h3>
+                        <p className="text-sm text-gray-400">{t('experience.endava.year')}</p>
                         <ul className="list-disc list-inside space-y-2 mt-4 text-gray-300">
-                            <li>Developed data-driven UIs from designs, using HTML, CSS, JavaScript, and React.</li>
-                            <li>Created reusable UI components for enhanced user experience.</li>
-                            <li>Participated in daily standup meetings for progress updates.</li>
+                        <li>{t('experience.endava.description_one')}</li>
+                            <li>{t('experience.endava.description_two')}</li>
+                            <li>{t('experience.endava.description_three')}</li>
                         </ul>
                     </div>
 
