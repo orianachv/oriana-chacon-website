@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import close from '../icons/close.png';
 import menu from '../icons/menu.png';
 import SwitchButton from './SwitchButton';
+import { useTranslation } from 'react-i18next';
 
 
 const Header: React.FC = () => {
+    const { t } = useTranslation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [language, setLanguage] = useState('english'); // Establece el idioma inicial, por ejemplo, 'english'
 
@@ -23,10 +25,10 @@ const Header: React.FC = () => {
             </div>
 
             <nav className={`md:flex flex-col md:flex-row ${isMenuOpen ? 'block' : 'hidden'}`}>
-                <a href="#about" className="block px-4 py-2  hover:text-teal-400 hover:bg-gray-700 hover:rounded-md  ">ABOUT</a>
-                <a href="#experience" className="block px-4 py-2  hover:text-teal-400 hover:bg-gray-700 hover:rounded-md">EXPERIENCE</a>
-                <a href="#skills" className="block px-4 py-2  hover:text-teal-400 hover:bg-gray-700 hover:rounded-md">SKILLS</a>
-                <a href="#contact" className="block px-4 py-2  hover:text-teal-400 hover:bg-gray-700 hover:rounded-md">CONTACT</a>
+                <a href="#about" className="block px-4 py-2  hover:text-teal-400 hover:bg-gray-700 hover:rounded-md  ">{t('header.about')}</a>
+                <a href="#experience" className="block px-4 py-2  hover:text-teal-400 hover:bg-gray-700 hover:rounded-md">{t('header.experience')}</a>
+                <a href="#skills" className="block px-4 py-2  hover:text-teal-400 hover:bg-gray-700 hover:rounded-md">{t('header.skills')}</a>
+                <a href="#contact" className="block px-4 py-2  hover:text-teal-400 hover:bg-gray-700 hover:rounded-md">{t('header.contact')}</a>
                <SwitchButton/>
             </nav>
 

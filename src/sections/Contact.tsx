@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useTranslation } from 'react-i18next';
 
 
 
 const Contact: React.FC = () => {
+    const { t } = useTranslation();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -54,11 +56,11 @@ const Contact: React.FC = () => {
 
     return (
         <div id="contact" className="text-gray-200 p-6 ">
-            <h2 className="text-3xl font-bold mb-6">Contact</h2>
+            <h2 className="text-3xl font-bold mb-6">{t('contact.title')}</h2>
             <div className='flex flex-col items-center'>
                 <form onSubmit={handleSubmit} className="space-y-8 w-full max-w-lg mx-auto">
                     <div>
-                        <label htmlFor="name" className="block text-md font-medium ">Nombre</label>
+                        <label htmlFor="name" className="block text-md font-medium ">{t('contact.name')}</label>
                         <input
                             type="text"
                             id="name"
@@ -70,7 +72,7 @@ const Contact: React.FC = () => {
                         />
                     </div>
                     <div>
-                        <label htmlFor="email" className="block text-md font-medium ">Correo Electrónico</label>
+                        <label htmlFor="email" className="block text-md font-medium ">{t('contact.email')}</label>
                         <input
                             type="email"
                             id="email"
@@ -82,7 +84,7 @@ const Contact: React.FC = () => {
                         />
                     </div>
                     <div>
-                        <label htmlFor="message" className="block text-md font-medium ">Mensaje</label>
+                        <label htmlFor="message" className="block text-md font-medium ">{t('contact.message')}</label>
                         <textarea
                             id="message"
                             name="message"
@@ -93,7 +95,7 @@ const Contact: React.FC = () => {
                         />
                     </div>
                     <button type="submit" className="w-full bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
-                        Enviar
+                    {t('contact.send')}
                     </button>
                 </form>
             </div>
