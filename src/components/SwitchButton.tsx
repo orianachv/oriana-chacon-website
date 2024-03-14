@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const SwitchButton: React.FC = () => {
@@ -9,32 +9,20 @@ const SwitchButton: React.FC = () => {
   // Función para cambiar el idioma
   const toggleLanguage = () => {
     setLanguage((prevLanguage) => (prevLanguage === 'en' ? 'es' : 'en'));
-    i18n.changeLanguage(language);
   };
+  useEffect(()=>{
+    i18n.changeLanguage(language);
+  },[language])
+
+  const sliderClass = language === 'en' ? 'translate-x-0' : 'translate-x-full';
 
   return (
-    <div className="flex items-center justify-center">
-      {/* Botón de cambio de idioma */}
-      <div
-        className="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in"
-      >
-        <input
-          type="checkbox"
-          name="toggle"
-          id="toggle"
-          className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
-          onClick={toggleLanguage}
-          checked={language === 'es'}
-          readOnly
-        />
-        <label
-          htmlFor="toggle"
-          className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
-        ></label>
+    <div className="flex items-center justify-center px-4">
+      <div className="w-12 h-6 flex items-center bg-gray-300 rounded-full p-0.5 cursor-pointer" onClick={toggleLanguage}>
+        {/* Deslizador del botón */}
+        <div className={`bg-white w-5 h-5 rounded-full shadow-md transform transition duration-300 ease-in-out ${sliderClass}`}></div>
       </div>
-      <label htmlFor="toggle" className="text-lg text-gray-400 pr-4">
-        {language === 'en' ? 'EN' : 'ES'}
-      </label>
+      <span className="ml-4 text-lg text-gray-400">{language.toUpperCase()}</span>
     </div>
   );
 };

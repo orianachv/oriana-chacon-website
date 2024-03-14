@@ -14,7 +14,8 @@ const About: React.FC = () => {
       </p>
       <p className="text-md leading-relaxed">
         {t('about.description_three')}
-      </p>
+      </p> 
+     
     </section>
   );
 };
