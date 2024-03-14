@@ -1,0 +1,73 @@
+{
+  "home": {
+    "name": "Oriana Chacón",
+    "developer": "Desarrollador Front End"
+  },
+  "about": {
+    "title": "Acerca de Mi",
+    "description_one": "¡Hola! Soy Oriana, una apasionada desarrolladora web con una trayectoria de más de 5 años en el sector tecnológico. Mi experiencia se centra en el desarrollo front-end, donde he destacado por crear interfaces responsivas que aseguran una experiencia de usuario fluida y adaptable a cualquier dispositivo. La tecnología es más que mi profesión, es mi pasión. Me dedico a explorar y dominar nuevas técnicas y herramientas que empujan las fronteras del desarrollo web hacia nuevas dimensiones. Además, me encanta compartir conocimientos, ideas y descubrimientos con la comunidad, creyendo firmemente en el valor de la colaboración y el aprendizaje colectivo.",
+    "description_two": "Continuamente busco innovar y enfrentar nuevos desafíos. Mi trayectoria me ha enseñado la importancia de ser adaptable y el valor de abrazar el cambio en un paisaje digital que evoluciona rápidamente. Mirando hacia el futuro, mi objetivo es contribuir a proyectos que no solo aprovechen las tecnologías más avanzadas, sino que también tengan un impacto significativo en la vida de las personas.",
+    "description_three": "Acompáñame en este emocionante camino y disfrutemos juntos!"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "cliengo": {
+        "title": "Desarrollador React - Cliengo Argentina",
+        "year": "2022 - 2023",
+        "description_one": "Desarrollé interacciones innovadoras para chatbots como miembro clave del equipo de experiencia de conversación, utilizando React.",
+        "description_two": "Mejoré la consistencia del proyecto y reduje el tiempo de desarrollo mediante el diseño de componentes de UI reutilizables, lo que mejoró la mantenibilidad y la escalabilidad de la aplicación.",
+        "description_three":"Contribuí al exitoso despliegue de la aplicación en Amazon Web Services, potenciando la escalabilidad y la fiabilidad del sistema."
+    },
+    "endava": {
+        "title": "Desarrollador Front End - Cliente: Adobe, Endava Argentina",
+        "year": "2021 - 2022",
+        "description_one": "Construí con éxito interfaces de usuario basadas en datos, alineadas con los diseños del equipo de Adobe XD, logrando una traducción impecable del concepto a la funcionalidad.",
+        "description_two": "Desarrollé y mantuve sitios web orientados al usuario utilizando HTML, CSS, JavaScript y React, manteniendo las mejores prácticas y los estándares web modernos.",
+        "description_three":"Innové en la creación de componentes de UI caracterizados por código reutilizable, mejorando significativamente la experiencia del usuario mediante un enfoque en la modularidad, escalabilidad y mantenibilidad."
+    },
+    "endava_dos": {
+      "title": "Desarrollador React Native - Cliente: Varsity, Endava Argentina",
+      "year": "2021 - 2021",
+      "description_one": "Desarrollé una aplicación móvil usando React Native, ofreciendo una experiencia de usuario integrada y coherente a través de diversas plataformas.",
+      "description_two": "Trabajé estrechamente con diseñadores UX y UI para incorporar elementos de diseño centrados en el usuario, mejorando la usabilidad de la aplicación y la satisfacción del cliente.",
+      "description_three": "Inicié el desarrollo de la aplicación, jugando un rol esencial en su diseño arquitectónico y estableciendo las bases para una solución sólida y escalable."
+    },
+    "seeed": {
+      "title": "Desarrollador Full Stack - Seeed, USA",
+      "year": "2020 - 2021",
+      "description_one": "Lideré con éxito el desarrollo y entrega de un MVP completamente funcional en el plazo previsto, demostrando habilidades de liderazgo y destreza técnica.",
+      "description_two": "Diseñé e implementé la interfaz de usuario con React, mejorando significativamente la usabilidad y el atractivo visual de la aplicación.",
+      "description_three": "Desarrollé APIs RESTful con Node.js y Express, mejorando las capacidades de manipulación de datos y fortaleciendo el rendimiento del MVP."
+    },
+    "accenture": {
+      "title": "Desarrollador Full Stack - Accenture, Argentina",
+      "year": "2019 - 2020",
+      "description_one": "Contribuí al diseño y desarrollo de soluciones y aplicaciones web utilizando Amazon Web Services, frameworks de JavaScript, bases de datos SQL y NoSQL, enfocándome en potenciar las funcionalidades del front-end mediante el uso de React.",
+      "description_two": "Compartí conocimientos e consejos prácticos sobre React con los miembros del equipo, facilitando su proceso de aprendizaje y adopción de la biblioteca, a pesar de tener solo dos años de experiencia, reforzando así las habilidades de desarrollo front-end del equipo en general.",
+      "description_three": "Implementé pruebas unitarias y de integración para validar la funcionalidad, asegurando la fiabilidad y el alto rendimiento de las aplicaciones web."
+    },
+    "plataforma": {
+      "title": "Profesor de Javascript/Desarrollador Full Stack - Plataforma 5, Argentina ",
+      "year": "2018 - 2019",
+      "description_one": "Tutoricé a más de 70 estudiantes en programación full-stack, incrementando significativamente su competencia de desarrollo web y contribuyendo a su exitosa finalización del bootcamp.",
+      "description_two": "Como Desarrollador Full Stack, mejoré la experiencia de usuario del sitio web de la empresa, lo que llevó a un aumento en las ventas y a una mejora en el compromiso de los clientes.",
+      "description_three": "Facilité talleres y clases personalizadas, y lideré proyectos de equipo, aplicando metodologías ágiles para optimizar los procesos de aprendizaje y desarrollo."
+    }
+  },
+  "skills":{
+    "title": "Habilidades"
+  },
+  "contact":{
+    "title": "Contacto",
+    "name": "Nombre",
+    "email": "Correo Electrónico",
+    "message": "Mensaje",
+    "send": "Enviar"
+  },
+  "header":{
+    "about": "ACERCA DE",
+    "experience": "EXPERIENCIA",
+    "skills": "HABILIDADES",
+    "contact": "CONTACTO"
+  }
+}

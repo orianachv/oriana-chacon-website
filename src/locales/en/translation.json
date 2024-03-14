@@ -1,0 +1,73 @@
+{
+  "home": {
+    "name": "I'm Oriana Chacón",
+    "developer": "Front End Developer"
+  },
+  "about": {
+    "title": "About me",
+    "description_one": "Hello! I'm Oriana, a passionate web developer with over 5 years of experience in the tech industry. My expertise lies in front-end development, where I've excelled in creating responsive designs that ensure a seamless user experience across all devices. Technology is more than my profession; it's my passion. I dedicate myself to exploring and mastering new techniques and tools that push the boundaries of web development to new heights. Additionally, I love to share my knowledge, ideas, and discoveries with others, firmly believing in the value of collaboration and collective learning.",
+    "description_two": "I continually seek to innovate and tackle new challenges. My journey has taught me the importance of adaptability and the value of embracing change in a fast-evolving digital landscape. As I look to the future, my goal is to contribute to projects that not only leverage cutting-edge technologies but also make a meaningful impact on people's lives. Join me on this exciting journey and enjoy.",
+    "description_three": "Join me on this exciting journey and enjoy!"
+  },
+  "experience": {
+    "title": "Experience",
+    "cliengo": {
+      "title": "React Developer - Cliengo Argentina",
+      "year": "2022 - 2023",
+      "description_one": "Developed innovative chatbot interactions as a key member of the conversation experience team using React.",
+      "description_two": "Enhanced project consistency and reduced development time by designing reusable UI components, improving application maintainability and scalability.",
+      "description_three": "Contributed to successful app deployment on Amazon Web Services, boosting system scalability and reliability."
+    },
+    "endava": {
+      "title": "Front End Developer - Client: Adobe, Endava Argentina",
+      "year": "2021 - 2022",
+      "description_one": "Successfully built data-driven UIs in alignment with design team inputs and XD designs, achieving seamless concept-to-functionality translation.",
+      "description_two": "Developed and maintained user-facing websites using HTML, CSS, JavaScript, and React, upholding best practices and modern web standards.",
+      "description_three": "Innovated in the creation of UI components characterized by reusable code, thereby significantly enhancing user experience through an emphasis on modularity, scalability, and maintainability."
+    },
+    "endava_dos": {
+      "title": "React Native Developer - Client: Varsity, Endava Argentina",
+      "year": "2021 - 2021",
+      "description_one": "Developed a mobile application with React Native, delivering a seamless cross-platform user experience.",
+      "description_two": "Worked closely with UX and UI designers to incorporate user-centric design elements, enhancing app usability and customer satisfaction.",
+      "description_three": "Pioneered the development of the application from the ground up, playing a crucial role in the architectural design, which laid the foundation for a robust and scalable solution."
+    },
+    "seeed": {
+      "title": "Full Stack Developer - Seeed, USA",
+      "year": "2020 - 2021",
+      "description_one": "Successfully led the development and delivery of a fully functional MVP on time,  showcasing leadership and technical prowess.",
+      "description_two": "Designed and implemented the user interface with React, significantly improving the application's usability and visual appeal.",
+      "description_three": "Spearheaded the development of RESTful APIs with Node.js and Express, enhancing data manipulation capabilities and bolstering the MVP's performance."
+    },
+    "accenture": {
+      "title": "Full Stack Developer - Accenture, Argentina",
+      "year": "2019 - 2020",
+      "description_one": "Contributed to the design and development of web solutions and applications using Amazon Web Services, JavaScript frameworks, SQL, and NoSQL databases, with a focus on enhancing front-end functionalities using React.",
+      "description_two": "Shared knowledge and practical insights on React with team members, facilitating their learning process and adoption of the library despite having only two years of experience, thereby bolstering the team's overall front-end development skills.",
+      "description_three": "Implemented unit testing and integration testing to validate functionality, ensuring the reliability and high performance of web applications."
+    },
+    "plataforma": {
+      "title": "Javascript Teacher/Full Stack Developer - Plataforma 5, Argentina ",
+      "year": "2018 - 2019",
+      "description_one": "Mentored over 70 students in full-stack programming, significantly boosting their coding proficiency and contributing to their successful bootcamp completion.",
+      "description_two": "Enhanced the company's website user experience as a Full Stack Developer, leading to increased sales and improved customer engagement.",
+      "description_three": "Facilitated workshops and personalized classes, and led team projects, applying agile methodologies to optimize learning and development processes."
+    }
+  },
+  "skills":{
+    "title": "Skills"
+  },
+  "contact":{
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
+  },
+  "header":{
+    "about": "ABOUT",
+    "experience": "EXPERIENCE",
+    "skills": "SKILLS",
+    "contact": "CONTACT"
+  }
+}

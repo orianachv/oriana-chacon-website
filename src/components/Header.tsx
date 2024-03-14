@@ -1,26 +1,37 @@
-import React from 'react';
-import { Link } from 'react-scroll';
+import React, { useState } from 'react';
+import close from '../icons/close.png';
+import menu from '../icons/menu.png';
+import SwitchButton from './SwitchButton';
+import { useTranslation } from 'react-i18next';
+
 
 const Header: React.FC = () => {
-    const cvUrl = 'https://github.com/orianachv/resume/raw/main/OrianaChaconResume.pdf';
+    const { t } = useTranslation();
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [language, setLanguage] = useState('english'); // Establece el idioma inicial, por ejemplo, 'english'
+
+    const toggleLanguage = () => {
+        const newLanguage = language === 'EN' ? 'ES' : 'EN';
+        setLanguage(newLanguage);
+        // Aquí puedes agregar lógica para cambiar el idioma de tu aplicación
+    };
 
     return (
-        <header className="bg-gray-900 text-gray-100 h-full flex flex-col items-center justify-center p-8">
-
-            <div>
-                <h1 className="text-4xl font-bold text-teal-500">Oriana Chacon Vivas</h1>
-                <p className="text-xl text-center">Front End Developer</p>
+        <header className="bg-gray-900 text-gray-400 py-4 md:flex md:justify-between md:items-center">
+            <div className='flex justify-end px-4'>
+                <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden focus:outline-none">
+                    <img src={isMenuOpen ? close : menu} alt="Menu" className="w-6 h-6" />
+                </button>
             </div>
 
-            <nav className="flex flex-col space-y-4 mt-6 text-center">
-                {/* Usar el componente Link de react-scroll */}
-                <Link activeClass="text-teal-500" to="about" spy={true} smooth={true} offset={-70} duration={500} className="hover:text-teal-500 transition duration-300">About me</Link>                <Link activeClass="text-teal-500" to="experience" spy={true} smooth={true} offset={-70} duration={500} className="hover:text-teal-500 transition duration-300">Experience</Link>
-                <Link activeClass="text-teal-500" to="skills" spy={true} smooth={true} offset={-70} duration={500} className="hover:text-teal-500 transition duration-300">Skills</Link>
-                <Link activeClass="text-teal-500" to="contact" spy={true} smooth={true} offset={-70} duration={500} className="hover:text-teal-500 transition duration-300">Contact</Link>
-                <a href={cvUrl} download="Oriana_Chacon_Vivas_CV.pdf" className="hover:text-teal-500 transition duration-300">
-                    Download CV
-                </a>
+            <nav className={`md:flex flex-col md:flex-row ${isMenuOpen ? 'block' : 'hidden'}`}>
+                <a href="#about" className="block px-4 py-2  hover:text-teal-400 hover:bg-gray-700 hover:rounded-md  ">{t('header.about')}</a>
+                <a href="#experience" className="block px-4 py-2  hover:text-teal-400 hover:bg-gray-700 hover:rounded-md">{t('header.experience')}</a>
+                <a href="#skills" className="block px-4 py-2  hover:text-teal-400 hover:bg-gray-700 hover:rounded-md">{t('header.skills')}</a>
+                <a href="#contact" className="block px-4 py-2  hover:text-teal-400 hover:bg-gray-700 hover:rounded-md">{t('header.contact')}</a>
+               <SwitchButton/>
             </nav>
+
         </header>
     );
 };
