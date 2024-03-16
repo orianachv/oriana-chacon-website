@@ -5,53 +5,53 @@
   },
   "about": {
     "title": "About me",
-    "description_one": "Hello! I'm Oriana, a passionate web developer with over 5 years of experience in the tech industry. My expertise lies in front-end development, where I've excelled in creating responsive designs that ensure a seamless user experience across all devices. Technology is more than my profession; it's my passion. I dedicate myself to exploring and mastering new techniques and tools that push the boundaries of web development to new heights. Additionally, I love to share my knowledge, ideas, and discoveries with others, firmly believing in the value of collaboration and collective learning.",
-    "description_two": "I continually seek to innovate and tackle new challenges. My journey has taught me the importance of adaptability and the value of embracing change in a fast-evolving digital landscape. As I look to the future, my goal is to contribute to projects that not only leverage cutting-edge technologies but also make a meaningful impact on people's lives. Join me on this exciting journey and enjoy.",
-    "description_three": "Join me on this exciting journey and enjoy!"
+    "description_one": "⁤Hello! I'm Oriana, a passionate net developer with over five years of experience in the tech enterprise. ⁤⁤My information lies within the the front-stop development, in which I've excelled in growing responsive designs that make sure an unbroken client enjoys throughout all devices. ⁤⁤Technology is greater than my career; it is my passion. ⁤⁤I dedicate myself to exploring and getting to know new strategies and gadget that push the limits of net improvement to new heights. ⁤⁤Additionally, I want to percentage my know-how, ideas, and discoveries with others, firmly believing in the price of collaboration and collective studying.",
+    "description_two": "⁤I generally seek to innovate and cope with new demanding situations. ⁤⁤My journey has taught me the significance of adaptability and the price of embracing options in a quick-evolving digital panorama. ⁤⁤As I seem to the future, my purpose is to contribute to initiatives that make a great impact on people's lives. ⁤",
+    "description_three": "⁤Join me in this interesting journey and enjoy!"
   },
   "experience": {
     "title": "Experience",
     "cliengo": {
       "title": "React Developer - Cliengo Argentina",
       "year": "2022 - 2023",
-      "description_one": "Developed innovative chatbot interactions as a key member of the conversation experience team using React.",
-      "description_two": "Enhanced project consistency and reduced development time by designing reusable UI components, improving application maintainability and scalability.",
-      "description_three": "Contributed to successful app deployment on Amazon Web Services, boosting system scalability and reliability."
+      "description_one": "Enhanced consumer retention and engagement through progressive chatbot interactions in React, becoming a key aspect of the consumer revel.",
+      "description_two": "Enhanced mission consistency and decreased development time with the aid of designing reusable UI components, improving utility maintainability and scalability.",
+      "description_three": "Contributed to a success app deployment on Amazon Web Services, boosting machine scalability and reliability."
     },
     "endava": {
       "title": "Front End Developer - Client: Adobe, Endava Argentina",
       "year": "2021 - 2022",
-      "description_one": "Successfully built data-driven UIs in alignment with design team inputs and XD designs, achieving seamless concept-to-functionality translation.",
-      "description_two": "Developed and maintained user-facing websites using HTML, CSS, JavaScript, and React, upholding best practices and modern web standards.",
+      "description_one": "Leveraged statistics analytics to format interfaces tailor-made to non-public needs, reaching seamless concept-to-functionality translation.",
+      "description_two": "Developed and maintained person-going through websites using HTML, CSS, JavaScript, and React, upholding tremendous practices and contemporary internet standards.",
       "description_three": "Innovated in the creation of UI components characterized by reusable code, thereby significantly enhancing user experience through an emphasis on modularity, scalability, and maintainability."
     },
     "endava_dos": {
       "title": "React Native Developer - Client: Varsity, Endava Argentina",
       "year": "2021 - 2021",
-      "description_one": "Developed a mobile application with React Native, delivering a seamless cross-platform user experience.",
-      "description_two": "Worked closely with UX and UI designers to incorporate user-centric design elements, enhancing app usability and customer satisfaction.",
-      "description_three": "Pioneered the development of the application from the ground up, playing a crucial role in the architectural design, which laid the foundation for a robust and scalable solution."
+      "description_one": "Developed a cellular application with React Native, turning in a continuing cross-platform user revel in.",
+      "description_two": "Worked intently with UX and UI designers to comprise user-centric layout factors, enhancing app usability and customer satisfaction.",
+      "description_three": "Pioneered the development of the software from the floor up, playing an important role in the architectural layout, which laid the inspiration for a strong and scalable answer."
     },
     "seeed": {
       "title": "Full Stack Developer - Seeed, USA",
       "year": "2020 - 2021",
-      "description_one": "Successfully led the development and delivery of a fully functional MVP on time,  showcasing leadership and technical prowess.",
-      "description_two": "Designed and implemented the user interface with React, significantly improving the application's usability and visual appeal.",
-      "description_three": "Spearheaded the development of RESTful APIs with Node.js and Express, enhancing data manipulation capabilities and bolstering the MVP's performance."
+      "description_one": "Successfully led the improvement and delivery of a totally purposeful MVP on time, showcasing management and technical prowess.",
+      "description_two": "Designed and applied the personal interface with React, considerably enhancing the software's usability and visual enchantment.",
+      "description_three": "Developed RESTful APIs with Node.js and Express, enhancing data manipulation capabilities and bolstering the MVP's performance."
     },
     "accenture": {
       "title": "Full Stack Developer - Accenture, Argentina",
       "year": "2019 - 2020",
-      "description_one": "Contributed to the design and development of web solutions and applications using Amazon Web Services, JavaScript frameworks, SQL, and NoSQL databases, with a focus on enhancing front-end functionalities using React.",
-      "description_two": "Shared knowledge and practical insights on React with team members, facilitating their learning process and adoption of the library despite having only two years of experience, thereby bolstering the team's overall front-end development skills.",
-      "description_three": "Implemented unit testing and integration testing to validate functionality, ensuring the reliability and high performance of web applications."
+      "description_one": "Contributed to the design and development of web solutions and programs using Amazon Web Services, JavaScript frameworks, SQL, and NoSQL databases, with a focal point on improving the front-cease functionalities of the usage of React.",
+      "description_two": "Shared information and realistic insights on React with crew individuals, facilitating their getting-to-know and adoption of the library, thereby bolstering the team's usual front-cease development abilities.",
+      "description_three": "Implemented unit testing and integration checking out to validate functionality, making sure the reliability and excessive performance of internet programs."
     },
     "plataforma": {
       "title": "Javascript Teacher/Full Stack Developer - Plataforma 5, Argentina ",
       "year": "2018 - 2019",
-      "description_one": "Mentored over 70 students in full-stack programming, significantly boosting their coding proficiency and contributing to their successful bootcamp completion.",
-      "description_two": "Enhanced the company's website user experience as a Full Stack Developer, leading to increased sales and improved customer engagement.",
-      "description_three": "Facilitated workshops and personalized classes, and led team projects, applying agile methodologies to optimize learning and development processes."
+      "description_one": "Mentored over 70 students in full-stack programming, significantly boosting their coding skill ability and contributing to their hit boot camp final touch.",
+      "description_two": "Enhanced the business enterprise's website person experience as a Full Stack Developer, main to multiplied income and stepped forward consumer engagement.",
+      "description_three": "Facilitated workshops and customized classes, and led group initiatives, applying agile methodologies to optimize gaining knowledge of and development techniques."
     }
   },
   "skills":{

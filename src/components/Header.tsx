@@ -8,13 +8,6 @@ import { useTranslation } from 'react-i18next';
 const Header: React.FC = () => {
     const { t } = useTranslation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [language, setLanguage] = useState('english'); // Establece el idioma inicial, por ejemplo, 'english'
-
-    const toggleLanguage = () => {
-        const newLanguage = language === 'EN' ? 'ES' : 'EN';
-        setLanguage(newLanguage);
-        // Aquí puedes agregar lógica para cambiar el idioma de tu aplicación
-    };
 
     return (
         <header className="bg-gray-900 text-gray-400 py-4 md:flex md:justify-between md:items-center">
