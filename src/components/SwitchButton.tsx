@@ -12,7 +12,7 @@ const SwitchButton: React.FC = () => {
   };
   useEffect(()=>{
     i18n.changeLanguage(language);
-  },[language])
+  },[i18n, language])
 
   const sliderClass = language === 'en' ? 'translate-x-0' : 'translate-x-full';
 
