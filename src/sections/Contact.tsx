@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const serverURL = "http://localhost:3001/contacto";
+    const serverURL = "https://server-portfolio-oriana.vercel.app/contact";
     const formDataToSend = {
       nombre: formData.name,
       email: formData.email,
