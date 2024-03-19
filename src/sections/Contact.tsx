@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const serverURL = "https://server-portfolio-oriana.vercel.app/contact";
+    const serverURL = "https://server-portfolio-omega.vercel.app/contact";
     const formDataToSend = {
       nombre: formData.name,
       email: formData.email,
@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
     <div id="contact" className="text-gray-200 p-6 ">
       {/* Toast Notification */}
       {toast.visible && (
-        <div className="fixed bottom-0 right-0 mb-4 mr-4 flex items-center justify-center">
+        <div className="fixed bottom-0 right-0 mb-4 mr-4 flex items-center justify-center z-10">
           <div className="bg-gray-200 text-gray-800 p-3 rounded-lg shadow-lg">
             {toast.message}
           </div>
