@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const serverURL = "https://server-portfolio-omega.vercel.app/contact";
+    const apiUrl = process.env.REACT_APP_API_URL;
     const formDataToSend = {
       nombre: formData.name,
       email: formData.email,
@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
     };
 
     axios
-      .post(serverURL, formDataToSend)
+      .post(`${apiUrl}/contact`, formDataToSend)
       .then((response) => {
         setToast({
           visible: true,
