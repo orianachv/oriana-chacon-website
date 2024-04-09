@@ -39,9 +39,13 @@ const Contact: React.FC = () => {
       email: formData.email,
       mensaje: formData.message,
     };
-
+    const config = {
+      headers: {
+        "Access-Control-Allow-Origin": "*"
+      },
+    };
     axios
-      .post(`${apiUrl}/contact`, formDataToSend)
+      .post(`${apiUrl}/contact`, formDataToSend, config)
       .then((response) => {
         setToast({
           visible: true,
